@@ -30,7 +30,7 @@ public class Main {
 
             switch (escolha) {
                 case 1:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.contaDegraus();
                     break;
                 case 2:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

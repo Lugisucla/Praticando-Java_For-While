@@ -1,2 +1,18 @@
+import java.util.Scanner;
+
 public class Lacos {
+    Scanner leitura = new Scanner(System.in);
+
+    public void contaDegraus() {
+        int degraus;
+
+        System.out.println("Digite a quantidade de degraus:");
+        degraus = leitura.nextInt();
+
+        int i = 1;
+        while (i <= degraus) {
+            System.out.println("Subindo o degrau " + i);
+            i++;
+        }
+    }
 }
