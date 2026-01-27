@@ -33,7 +33,7 @@ public class Main {
                     lacos.contaDegraus();
                     break;
                 case 2:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.somaNumeros();
                     break;
                 case 3:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

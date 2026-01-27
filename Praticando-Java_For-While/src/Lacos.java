@@ -15,4 +15,16 @@ public class Lacos {
             i++;
         }
     }
+
+    public void somaNumeros() {
+        int[] valores = {10, 20, 30, 40, 50};
+        int i = 0;
+        int soma = 0;
+
+        while (i < valores.length) {
+            soma += valores[i];
+            i++;
+        }
+        System.out.println("A soma total das receitas é: " + soma);
+    }
 }
