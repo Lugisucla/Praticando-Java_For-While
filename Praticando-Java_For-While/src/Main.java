@@ -36,7 +36,7 @@ public class Main {
                     lacos.somaNumeros();
                     break;
                 case 3:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.somaPares();
                     break;
                 case 4:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
