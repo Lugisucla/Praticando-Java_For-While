@@ -45,7 +45,7 @@ public class Main {
                     lacos.encontraMaiorNumero();
                     break;
                 case 6:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.monitoraSenha();
                     break;
                 case 7:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

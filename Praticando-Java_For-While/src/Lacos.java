@@ -76,4 +76,22 @@ public class Lacos {
         System.out.println("Da lista: " + valores + ", o maior número é: " + guardaMaiorNumero);
     }
 
+    public void monitoraSenha() {
+        int senha = 1234;
+        int tentativaSenha;
+
+        System.out.println("Digite a senha:");
+        tentativaSenha = leitura.nextInt();
+
+        for (int i = 1; i < 3; i++) {
+            if (tentativaSenha != senha) {
+                System.out.println("Senha incorreta! \nDigite a senha novamente: ");
+                tentativaSenha = leitura.nextInt();
+            } else {
+                System.out.println("Senha Correta! Acesso concedido!");
+            }
+        }
+        System.out.println("Sua conta foi bloqueada temporariamente por excesso de tentativas.");
+
+    }
 }
