@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Lacos {
@@ -52,4 +54,26 @@ public class Lacos {
 
         System.out.println("O fatorial de " + fatorial + " é: " + acumulador);
     }
+
+    public void encontraMaiorNumero() {
+        int guardaMaiorNumero = 0;
+        List<Integer> valores = new ArrayList<>();
+
+        System.out.println("Digite os números separados por espaço: ");
+        for (String s : leitura.nextLine().split(" ")) {
+            valores.add(Integer.parseInt(s));
+        }
+
+        int i = 1;
+
+        do {
+            if (valores.get(i) > guardaMaiorNumero) {
+                guardaMaiorNumero = valores.get(i);
+            }
+            i++;
+        } while (i < valores.size());
+
+        System.out.println("Da lista: " + valores + ", o maior número é: " + guardaMaiorNumero);
+    }
+
 }

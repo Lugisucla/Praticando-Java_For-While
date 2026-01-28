@@ -42,7 +42,7 @@ public class Main {
                     lacos.calculaFatorial();
                     break;
                 case 5:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.encontraMaiorNumero();
                     break;
                 case 6:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
