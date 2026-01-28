@@ -92,6 +92,19 @@ public class Lacos {
             }
         }
         System.out.println("Sua conta foi bloqueada temporariamente por excesso de tentativas.");
+    }
 
+    public void validaNome() {
+        String nome;
+
+        System.out.println("Digite seu nome:");
+        nome = leitura.nextLine();
+
+        while (nome.length() < 3) {
+            System.out.println("Nome inválido. \nDigite novamente:");
+            nome = leitura.nextLine();
+        }
+
+        System.out.println("Nome " + nome + " cadastrado com sucesso!");
     }
 }
