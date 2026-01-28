@@ -39,7 +39,7 @@ public class Main {
                     lacos.somaPares();
                     break;
                 case 4:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.calculaFatorial();
                     break;
                 case 5:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

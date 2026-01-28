@@ -38,4 +38,18 @@ public class Lacos {
         }
         System.out.println("A soma dos números pares de 1 a 100 é: " + soma);
     }
+
+    public void calculaFatorial() {
+        int fatorial;
+        int acumulador = 1;
+
+        System.out.println("Digite a quantidade de fatorial:");
+        fatorial = leitura.nextInt();
+
+        for (int i = 1; i <= fatorial; i++) {
+            acumulador *= i;
+        }
+
+        System.out.println("O fatorial de " + fatorial + " é: " + acumulador);
+    }
 }
