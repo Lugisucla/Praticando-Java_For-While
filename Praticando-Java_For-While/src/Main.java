@@ -51,7 +51,7 @@ public class Main {
                     lacos.validaNome();
                     break;
                 case 8:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.contaInteiro();
                     break;
                 case 9:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

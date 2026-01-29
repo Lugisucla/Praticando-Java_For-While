@@ -107,4 +107,38 @@ public class Lacos {
 
         System.out.println("Nome " + nome + " cadastrado com sucesso!");
     }
+
+    public void contaInteiro() {
+        String numeroString = "";
+        int numero;
+        int numerosPositivos = 0;
+        int numerosNegativos = 0;
+
+        System.out.println("Digite um número (ou 'fim' para encerrar):");
+        numeroString = leitura.nextLine();
+
+        while (!numeroString.equals("fim")) {
+            if (numeroString.isBlank()) {
+                System.out.println("Entrada vazia!");
+                numeroString = leitura.nextLine();
+                continue;
+            }
+            try {
+                numero = Integer.parseInt(numeroString);
+                if (numero > 0) {
+                    numerosPositivos++;
+                } else if (numero < 0) {
+                    numerosNegativos++;
+                } else {
+                    System.out.println("O número 0 não é positivo nem negativo.");
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("Entrada inválida!");
+            }
+
+            numeroString = leitura.nextLine();
+        }
+
+        System.out.println("Números positivos: " + numerosPositivos + "\nNúmeros negativos: " + numerosNegativos);
+    }
 }
