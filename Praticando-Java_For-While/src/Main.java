@@ -54,7 +54,7 @@ public class Main {
                     lacos.contaInteiro();
                     break;
                 case 9:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.pulaCinco();
                     break;
                 case 10:
                     System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");

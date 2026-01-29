@@ -141,4 +141,20 @@ public class Lacos {
 
         System.out.println("Números positivos: " + numerosPositivos + "\nNúmeros negativos: " + numerosNegativos);
     }
+
+    public void pulaCinco() {
+        int numero;
+        List<Integer> listaSemCinco = new ArrayList<>();
+
+        System.out.println("Digite um número:");
+        numero = leitura.nextInt();
+
+        for (int i = 1; i <= numero; i++) {
+            if (i % 10 != 5) {
+                listaSemCinco.add(i);
+            }
+        }
+
+        System.out.println("Contagem de números (ignorando os terminados em cinco):\n" + listaSemCinco);
+    }
 }
