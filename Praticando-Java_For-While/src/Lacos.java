@@ -157,4 +157,28 @@ public class Lacos {
 
         System.out.println("Contagem de números (ignorando os terminados em cinco):\n" + listaSemCinco);
     }
+
+    public void controleConvidados() {
+        String nome;
+        List<String> convidados = new ArrayList<>();
+
+        do {
+            System.out.println("Digite o nome do convidado (ou 'ver' para visualizar a lista, 'sair' para terminar):");
+            nome= leitura.nextLine();
+
+            if (nome.equals("sair")) {
+                break;
+            }
+            if (convidados.contains(nome)) {
+                System.out.println("O nome " + nome + " já está na lista de convidados.");
+            } else if (!(convidados.contains(nome)) && !(nome.equals("ver"))) {
+                convidados.add(nome);
+                System.out.println(nome + " foi adicionado(a) na lista de convidados!");
+            } else if (nome.equals("ver")) {
+                System.out.println(convidados);
+            }
+        } while (!nome.equals("sair"));
+
+        System.out.println("Programa finalizado.");
+    }
 }

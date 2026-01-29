@@ -57,7 +57,7 @@ public class Main {
                     lacos.pulaCinco();
                     break;
                 case 10:
-                    System.out.println("Não existe nenhuma funcionalidade com esse número no momento!");
+                    lacos.controleConvidados();
                     break;
                 case 0:
                     System.out.println("Saindo do programa...");
@@ -67,6 +67,6 @@ public class Main {
             }
         }
 
-
+        scanner.close();
     }
 }
